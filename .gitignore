@@ -1,0 +1,20 @@
+# Environment
+.env
+backend/.env
+
+# Vector database
+backend/chroma_db/
+
+# Python
+__pycache__/
+*.pyc
+.conda/
+venv/
+
+# Node
+frontend/node_modules/
+frontend/.next/
+
+# Temp files
+backend/temp_*
+backend/meal_plan.pdf
