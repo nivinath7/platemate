@@ -277,7 +277,6 @@ ruamel.yaml.clib==0.2.15
 s3transfer==0.16.0
 safetensors==0.7.0
 scikit-learn==1.6.1
-scipy==1.13.1
 sentence-transformers==3.4.1
 sentencepiece==0.2.1
 sgmllib3k==1.0.0
