@@ -136,7 +136,6 @@ langchain-community==0.3.31
 langchain-core==0.3.79
 langchain-google-genai==2.0.10
 langchain-openai==0.3.35
-langchain-pinecone==0.2.13
 langchain-text-splitters==0.3.11
 langdetect==1.0.9
 langgraph==0.6.11
