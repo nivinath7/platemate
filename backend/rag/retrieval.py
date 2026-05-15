@@ -1,7 +1,6 @@
 from langchain_openai import OpenAIEmbeddings
 import chromadb
 from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI
 from openai import OpenAI
 import json
 

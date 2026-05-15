@@ -1,10 +1,7 @@
-from langchain_community.document_loaders import PyPDFLoader
-from unstructured.partition.pdf import partition_pdf
-from unstructured.documents.elements import NarrativeText, Title, ListItem, Table
 # from langchain.schema import Document
 from langchain_core.documents import Document
 from langchain_openai import OpenAIEmbeddings
-from langchain_core.vectorstores import InMemoryVectorStore
+
 from dotenv import load_dotenv
 from openai import OpenAI
 import chromadb
@@ -39,6 +36,9 @@ def chunking_using_unstructured(file_path):
 DAYS = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"}
 
 def combine_elements_into_chunks(elements, source, user_id):
+
+    from unstructured.partition.pdf import partition_pdf
+    from unstructured.documents.elements import NarrativeText, Title, ListItem, Table
     final_chunks = []
     current_text = ""
     current_title = ""

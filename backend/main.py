@@ -2,7 +2,6 @@ from fastapi import FastAPI, File, UploadFile, Form
 from fastapi.middleware.cors import CORSMiddleware
 from rag.ingestion import combine_elements_into_chunks, embed, store
 from rag.retrieval import retrieve, generate
-from unstructured.partition.pdf import partition_pdf
 from pydantic import BaseModel
 import os
 
@@ -28,6 +27,8 @@ class ChatRequest(BaseModel):
 @app.post("/ingest")
 
 async def ingest(file: UploadFile = File(...), user_id: str = Form(...)):
+
+    from unstructured.partition.pdf import partition_pdf
 
     with open(f"temp_{file.filename}", "wb") as f:
         content = await file.read()
