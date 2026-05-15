@@ -184,7 +184,6 @@ typing_extensions==4.15.0
 tzdata==2026.2
 unstructured-client==0.44.0
 unstructured.pytesseract==0.3.15
-unstructured_inference==1.6.11
 urllib3==2.7.0
 uuid_utils==0.15.0
 uvicorn==0.47.0
