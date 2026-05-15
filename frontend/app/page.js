@@ -1,6 +1,8 @@
 "use client"
 import { useState } from "react"
 
+const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
+
 export default function Home() {
   const [userId, setUserId] = useState("")
   const [file, setFile] = useState(null)

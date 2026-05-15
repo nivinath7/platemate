@@ -2,6 +2,8 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 
+const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
+
 export default function Chat() {
   const [messages, setMessages] = useState([])
   const [query, setQuery] = useState("")
